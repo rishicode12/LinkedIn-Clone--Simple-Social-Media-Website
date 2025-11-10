@@ -37,7 +37,8 @@ app.use(express.json({ limit: "1mb" }));
 app.use(cookieParser());
 
 // Serve static files from the React app build directory
-app.use(express.static(path.join(__dirname, "..", "..", "linkedin-frontend", "dist")));
+const frontendPath = path.join(process.cwd(), "linkedin-frontend", "dist");
+app.use(express.static(frontendPath));
 
 // API routes
 app.get("/api/health", (_req, res) => {
@@ -50,7 +51,7 @@ app.use("/api/users", userRouter);
 
 // Catch-all handler: send back React's index.html file for any non-API routes
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "..", "linkedin-frontend", "dist", "index.html"));
+  res.sendFile(path.join(frontendPath, "index.html"));
 });
 
 app.use((err, _req, res, _next) => {
