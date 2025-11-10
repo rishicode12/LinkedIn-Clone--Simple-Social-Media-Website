@@ -28,7 +28,29 @@ const allowedOrigins = new Set([
   process.env.CLIENT_ORIGIN,
 ].filter(Boolean));
 
-app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      useDefaults: true,
+      directives: {
+        "default-src": ["'self'"],
+        "img-src": ["'self'", "data:", "https:", "http:"],
+        "script-src": [
+          "'self'",
+          "https://accounts.google.com",
+          "https://apis.google.com",
+          "https://www.googletagmanager.com"
+        ],
+        "style-src": ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+        "connect-src": ["'self'", "https:", "http:"],
+        "frame-src": ["'self'", "https://accounts.google.com"],
+        "font-src": ["'self'", "data:", "https://fonts.gstatic.com"]
+      }
+    },
+    crossOriginEmbedderPolicy: false,
+    crossOriginResourcePolicy: { policy: "cross-origin" }
+  })
+);
 app.use(
   cors({
     origin: Array.from(allowedOrigins),
