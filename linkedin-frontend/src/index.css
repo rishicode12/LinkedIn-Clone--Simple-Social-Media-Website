@@ -3,7 +3,8 @@
 /* Define a fallback for the missing font */
 @font-face {
   font-family: 'Sentient-Variable';
-  src: local('Arial'), local('Helvetica'), sans-serif;
+  src: url('/Sentient-Variable-e0c1b99d.woff2') format('woff2'),
+       local('Arial'), local('Helvetica'), sans-serif;
   font-weight: normal;
   font-style: normal;
 }

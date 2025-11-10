@@ -1,7 +1,8 @@
 /* Fallback for missing font files */
 @font-face {
   font-family: 'Sentient-Variable';
-  src: local('Arial'), local('Helvetica'), sans-serif;
+  src: url('/Sentient-Variable-e0c1b99d.woff2') format('woff2'),
+       local('Arial'), local('Helvetica'), sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -9,7 +10,8 @@
 /* Generic fallback for any missing custom fonts */
 @font-face {
   font-family: 'Sentient-Variable-e0c1b99d';
-  src: local('Arial'), local('Helvetica'), sans-serif;
+  src: url('/Sentient-Variable-e0c1b99d.woff2') format('woff2'),
+       local('Arial'), local('Helvetica'), sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +19,8 @@
 /* Redirect any requests for the missing font file to a data URL or fallback */
 @font-face {
   font-family: 'Sentient-Variable-e0c1b99d.woff2';
-  src: local('Arial'), local('Helvetica'), sans-serif;
+  src: url('/Sentient-Variable-e0c1b99d.woff2') format('woff2'),
+       local('Arial'), local('Helvetica'), sans-serif;
   font-weight: normal;
   font-style: normal;
 }
