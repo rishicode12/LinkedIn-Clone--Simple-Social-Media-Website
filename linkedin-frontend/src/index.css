@@ -1,0 +1,26 @@
+@import "tailwindcss";
+body{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* Global horizontal gutters (left/right space) */
+body {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
