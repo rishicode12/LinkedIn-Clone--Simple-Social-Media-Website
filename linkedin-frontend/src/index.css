@@ -1,8 +1,18 @@
 @import "tailwindcss";
+
+/* Define a fallback for the missing font */
+@font-face {
+  font-family: 'Sentient-Variable';
+  src: local('Arial'), local('Helvetica'), sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
   margin:0;
   padding:0;
   box-sizing:border-box;
+  font-family: 'Sentient-Variable', Arial, Helvetica, sans-serif;
 }
 
 /* Global horizontal gutters (left/right space) */
