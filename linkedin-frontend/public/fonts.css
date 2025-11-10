@@ -13,3 +13,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* Redirect any requests for the missing font file to a data URL or fallback */
+@font-face {
+  font-family: 'Sentient-Variable-e0c1b99d.woff2';
+  src: local('Arial'), local('Helvetica'), sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
