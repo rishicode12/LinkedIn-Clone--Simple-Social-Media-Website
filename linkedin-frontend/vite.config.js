@@ -12,6 +12,8 @@ export default defineConfig({
     open: false
   },
   build: {
+    outDir: "../server/public",
+    emptyOutDir: true,
     rollupOptions: {
       output: {
         assetFileNames: (assetInfo) => {

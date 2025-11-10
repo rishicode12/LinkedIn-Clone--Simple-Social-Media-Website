@@ -1,12 +1,19 @@
 # Dependencies
 node_modules/
 
+# Build outputs
+dist/
+build/
+server/public/
+
 # Logs
 logs
 *.log
 
 # Environment variables
 .env
+server/.env
+linkedin-frontend/.env
 
 # IDE files
 .vscode/
@@ -15,7 +22,3 @@ logs
 # OS generated files
 Thumbs.db
 .DS_Store
-
-# Build outputs
-dist/
-build/
