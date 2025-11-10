@@ -1,0 +1,15 @@
+/* Fallback for missing font files */
+@font-face {
+  font-family: 'Sentient-Variable';
+  src: local('Arial'), local('Helvetica'), sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Generic fallback for any missing custom fonts */
+@font-face {
+  font-family: 'Sentient-Variable-e0c1b99d';
+  src: local('Arial'), local('Helvetica'), sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}

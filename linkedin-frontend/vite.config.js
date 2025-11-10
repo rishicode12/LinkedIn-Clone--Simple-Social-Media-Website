@@ -24,4 +24,6 @@ export default defineConfig({
     },
   },
   publicDir: 'public',
+  // Handle missing assets gracefully
+  assetsInclude: ['**/*.woff', '**/*.woff2', '**/*.ttf'],
 })
